@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="com.example.nzse.widget.TimeControl">
+
+    <com.example.nzse.widget.ActionButton
+        android:id="@+id/actionButton_live"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        app:icon="@drawable/ic_live"
+        app:layout_constraintBottom_toTopOf="@id/curvature"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp" />
+
+    <com.example.nzse.widget.ActionButton
+        android:id="@+id/actionButton_shiftBack"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        app:icon="@drawable/ic_shift_back"
+        app:layout_constraintTop_toTopOf="@id/actionButton_live"
+        app:layout_constraintBottom_toBottomOf="@id/actionButton_live"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        android:layout_marginEnd="16dp" />
+
+    <com.example.nzse.widget.ActionButton
+        android:id="@+id/actionButton_shiftForward"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        app:icon="@drawable/ic_shift_forward"
+        app:layout_constraintTop_toTopOf="@id/actionButton_live"
+        app:layout_constraintBottom_toBottomOf="@id/actionButton_live"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        android:layout_marginStart="16dp" />
+
+    <ImageView
+        android:id="@+id/curvature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/curvature_annex"
+        android:contentDescription="@null"
+        android:src="@drawable/time_control_curvature" />
+
+    <View
+        android:id="@+id/curvature_annex"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@color/darkBlue"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.example.nzse.widget.ActionButton
+        android:id="@+id/actionButton_play"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        app:icon="@drawable/ic_play"
+        app:icon_size="largest"
+        app:layout_constraintTop_toTopOf="@id/curvature"
+        app:layout_constraintBottom_toBottomOf="@id/curvature_annex"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</merge>

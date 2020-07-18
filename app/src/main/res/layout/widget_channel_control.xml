@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_channel_control"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:padding="16dp"
+    tools:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView_favorite"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_favorite"
+        android:contentDescription="@null"
+        app:layout_constraintTop_toTopOf="@id/textView_provider"
+        app:layout_constraintBottom_toBottomOf="@id/textView_provider"
+        app:layout_constraintEnd_toStartOf="@id/textView_provider"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/textView_provider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZDF"
+        android:textColor="@color/light"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/circularButton_previous"
+        app:layout_constraintEnd_toStartOf="@id/circularButton_next" />
+
+    <TextView
+        android:id="@+id/textView_program"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="heute journal"
+        android:textColor="@color/light"
+        android:textStyle="bold"
+        android:textSize="21sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/textView_provider"
+        app:layout_constraintStart_toEndOf="@id/circularButton_previous"
+        app:layout_constraintEnd_toStartOf="@id/circularButton_next" />
+    
+    <com.example.nzse.widget.ActionButton
+        android:id="@+id/circularButton_previous"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        app:icon="@drawable/ic_zap_previous"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.nzse.widget.ActionButton
+        android:id="@+id/circularButton_next"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        app:icon="@drawable/ic_zap_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:rowCount="2"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:useDefaultMargins="true"
+        android:clipChildren="false"
+        app:layout_constraintTop_toBottomOf="@id/circularButton_next">
+
+        <com.example.nzse.widget.ChannelButton
+            android:layout_columnWeight="1"
+            app:icon="@drawable/ic_channel_ard" />
+
+        <com.example.nzse.widget.ChannelButton
+            android:layout_columnWeight="1"
+            app:icon="@drawable/ic_channel_zdf" />
+
+        <com.example.nzse.widget.ChannelButton
+            android:layout_columnWeight="1"
+            app:icon="@drawable/ic_channel_arte" />
+
+        <com.example.nzse.widget.ChannelButton
+            android:layout_columnWeight="1"
+            app:icon="@drawable/ic_channel_br" />
+
+        <com.example.nzse.widget.ChannelButton
+            android:layout_columnWeight="1"
+            app:icon="@drawable/ic_channel_rtl" />
+
+        <com.example.nzse.widget.ChannelButton
+            android:layout_columnWeight="1"
+            app:icon="@drawable/ic_channel_more" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

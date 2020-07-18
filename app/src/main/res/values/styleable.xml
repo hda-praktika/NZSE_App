@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Toolbar">
+        <attr name="inverted" />
+    </declare-styleable>
+
+    <declare-styleable name="SimpleToolbar">
+        <attr name="title" format="string" />
+        <attr name="inverted" />
+    </declare-styleable>
+
+    <declare-styleable name="ActionButton">
+        <attr name="icon" />
+        <attr name="icon_size" />
+    </declare-styleable>
+
+    <declare-styleable name="ChannelButton">
+        <attr name="icon" />
+        <attr name="led_state" />
+        <attr name="colorLedActive" />
+        <attr name="colorLedBackground" />
+    </declare-styleable>
+
+    <declare-styleable name="IconSwitch">
+        <attr name="iconStart" />
+        <attr name="iconEnd" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#245197</color>
+    <color name="darkBlue">#1C417A</color>
+    <color name="light">#fafafa</color>
+    <color name="dark">#2e2e2e</color>
+
+    <color name="ledActive">#0B9919</color>
+    <color name="ledBackground">#2897E1</color>
+
+    <color name="starPaletteDisabled">#837E6B</color>
+    <color name="starPaletteEnabled">#F9C71D</color>
+    <color name="starPaletteDot1">#BF2727</color>
+    <color name="starPaletteDot2">#1212E1</color>
+    <color name="starPaletteDot3">#2DC62D</color>
+    <color name="starPaletteDot4">#CA3BCA</color>
+    <color name="starPaletteDot5">#40D3D3</color>
+    <array name="starPalette">
+        <item>@color/starPaletteDisabled</item>
+        <item>@color/starPaletteEnabled</item>
+        <item>@color/starPaletteDot1</item>
+        <item>@color/starPaletteDot2</item>
+        <item>@color/starPaletteDot3</item>
+        <item>@color/starPaletteDot4</item>
+        <item>@color/starPaletteDot5</item>
+    </array>
+</resources>

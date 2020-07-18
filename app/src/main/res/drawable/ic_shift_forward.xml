@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<drawable xmlns:android="http://schemas.android.com/apk/res/android"
+    class="com.example.nzse.drawable.ShiftDrawable"
+    android:text="30"
+    android:color="@color/dark"
+    android:layoutDirection="ltr" />

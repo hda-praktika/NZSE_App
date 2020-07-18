@@ -1,0 +1,9 @@
+<resources>
+    <style name="ChannelButton">
+        <item name="android:background">@drawable/bg_channel_button</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+        <item name="android:elevation">4dp</item>
+        <item name="colorLedActive">@color/ledActive</item>
+        <item name="colorLedBackground">@color/ledBackground</item>
+    </style>
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Happy Zappy</string>
+
+    <string name="back_twice">Zweimal <b>Zurück</b> drücken zum <b>Beenden</b> der App</string>
+    <string name="power_long_press"><b>Gedrückt halten</b> zum Ausschalten</string>
+    <string name="too_many_favorites">Bitte <b>andere Favoriten entfernen</b>, um für diesen Kanal Platz zu schaffen.</string>
+    <string name="power_off_failed">Ausschalten fehlgeschlagen</string>
+    <string name="scanning_channels">Aktualisiere Kanalliste</string>
+    <string name="search_not_impl">Suche nicht implementiert</string>
+
+    <string name="settings_title">Einstellungen</string>
+    <string name="zoom_level_title">Zoomeinstellungen</string>
+    <string name="channel_search_title">Sendersuchlauf</string>
+    <string name="app_intro">App Intro</string>
+
+    <string name="zoomed">Vergrößert</string>
+    <string name="not_zoomed">Normal</string>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="icon" format="reference" />
+    <attr name="icon_size" format="enum">
+        <enum name="normal" value="22" />
+        <enum name="larger" value="30" />
+        <enum name="largest" value="38" />
+    </attr>
+    <attr name="iconStart" format="reference" />
+    <attr name="iconEnd" format="reference" />
+    <attr name="inverted" format="boolean" />
+    <attr name="led_state" format="enum">
+        <enum name="active" value="0" />
+        <enum name="background" value="1" />
+        <enum name="hidden" value="2" />
+    </attr>
+    <attr name="colorLedActive" format="color" />
+    <attr name="colorLedBackground" format="color" />
+    <attr name="channelButtonStyle" format="reference" />
+</resources>
